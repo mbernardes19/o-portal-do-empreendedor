@@ -1,0 +1,50 @@
+backend:
+  name: git-gateway
+media_folder: public/images/uploads
+collections:
+  - name: "footer-section"
+    label: "Footer Section"
+    folder: "content/footer-section"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {
+          label: "Links",
+          name: "links",
+          widget: "list",
+          summary: "{{fields.url}}",
+          allow_add: true,
+          field:
+            {
+              label: Link,
+              name: link,
+              widget: object,
+              summary: "{{fields.name}}",
+              fields: [
+                {
+                  label: Name,
+                  name: name,
+                  widget: string
+                },
+                {
+                  label: URL,
+                  name: url,
+                  widget: string
+                }
+              ]
+            }
+        }
+  - name: "footer"
+    label: "Footer"
+    folder: "content/footer"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Copyright text", name: "copyrightText", widget: "string"}
+      - {
+          label: "Sections",
+          name: "title",
+          widget: "list",
+          field: {label: "Section", name: "section", widget: "relation", collection: "footer-section", search_fields: ["title"], value_field: "title", display_fields: ["title"]}
+        }
