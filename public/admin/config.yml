@@ -1,12 +1,18 @@
 backend:
   name: git-gateway
+  repo: mbernardes19/o-portal-do-empreendedor.git
+  branch: main
 media_folder: public/images/uploads
+local_backend:
+  url: http://localhost:8081/api/v1
+  allowed_hosts: ['127.0.0.1']
 collections:
   - name: "footer-section"
     label: "Footer Section"
     folder: "content/footer-section"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    format: json
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {
@@ -40,6 +46,7 @@ collections:
     folder: "content/footer"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    format: json
     fields:
       - {label: "Copyright text", name: "copyrightText", widget: "string"}
       - {
