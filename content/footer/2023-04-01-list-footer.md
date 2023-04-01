@@ -1,0 +1,5 @@
+---
+copyrightText: Copyright
+title:
+  - Footer
+---
