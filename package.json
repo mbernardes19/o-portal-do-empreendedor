@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "npx netlify-cms-proxy-server & next dev",
+    "dev:live-cms": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
