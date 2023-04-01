@@ -1,0 +1,11 @@
+{
+  "footer-section-wrapper": {
+    "title": "Section 1",
+    "links": [
+      {
+        "name": "Link 1",
+        "url": "https://google.com"
+      }
+    ]
+  }
+}

@@ -11,47 +11,56 @@ collections:
     label: "Footer Section"
     folder: "content/footer-section"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{footer-section-wrapper.title}}"
     format: json
     fields:
-      - {label: "Title", name: "title", widget: "string"}
       - {
-          label: "Links",
-          name: "links",
-          widget: "list",
-          summary: "{{fields.url}}",
-          allow_add: true,
-          field:
-            {
-              label: Link,
-              name: link,
-              widget: object,
-              summary: "{{fields.name}}",
-              fields: [
-                {
-                  label: Name,
-                  name: name,
-                  widget: string
-                },
-                {
-                  label: URL,
-                  name: url,
-                  widget: string
-                }
-              ]
-            }
+        label: "Footer Section Wrapper",
+        name: "footer-section-wrapper",
+        widget: "object",
+        summary: "{{fields.title}}",
+        fields: [
+          {label: "Title", name: "title", widget: "string"},
+          {
+            label: "Links",
+            name: "links",
+            widget: "list",
+            summary: "{{fields.footer-section-wrapper.links.*.name}}",
+            allow_add: true,
+            fields: [
+                  {
+                    label: Name,
+                    name: name,
+                    widget: string
+                  },
+                  {
+                    label: URL,
+                    name: url,
+                    widget: string
+                  }
+                ]
         }
+        ]
+      }
   - name: "footer"
     label: "Footer"
     folder: "content/footer"
-    create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "footer"
     format: json
+    delete: false
     fields:
       - {label: "Copyright text", name: "copyrightText", widget: "string"}
       - {
-          label: "Sections",
-          name: "title",
-          widget: "list",
-          field: {label: "Section", name: "section", widget: "relation", collection: "footer-section", search_fields: ["title"], value_field: "title", display_fields: ["title"]}
+        label: "Section List",
+        name: "sections",
+        widget: "list",
+        field: {
+          label: "Section",
+          name: "sections",
+          widget: "relation",
+          collection: "footer-section",
+          search_fields: ["footer-section-wrapper.title"],
+          value_field: "footer-section-wrapper",
+          display_fields: ["footer-section-wrapper.title"]
         }
+      }

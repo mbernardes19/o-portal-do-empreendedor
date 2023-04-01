@@ -1,0 +1,23 @@
+{
+  "copyrightText": "Footer",
+  "sections": [
+    {
+      "title": "Section 1",
+      "links": [
+        {
+          "name": "Link 1",
+          "url": "https://google.com"
+        }
+      ]
+    },
+    {
+      "title": "Section 2",
+      "links": [
+        {
+          "name": "link 2",
+          "url": "https://google.com"
+        }
+      ]
+    }
+  ]
+}
