@@ -1,0 +1,109 @@
+.container {
+    display: flex;
+    gap: 70px;
+    flex-wrap: wrap;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    
+}
+ /*--------------------------todos-os-h1-----------------------------------------*/
+.titulo_um  {
+    color: rgb(48, 120, 202);
+    margin-bottom: 30px;
+
+    
+}
+.titulo_dois {
+    color: rgb(48, 120, 202);
+    margin-bottom: 45px;
+}
+
+.titulo_tres {
+    color: rgb(48, 120, 202);
+    margin-bottom: 40px;
+}
+/*--------------------------------------------------------------------------------*/
+
+/*-------------------------todos-os-h3--------------------------------------------*/
+.subtitulo_um {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #191970;
+    margin-bottom: 8px;
+}
+
+.subtitulo_dois {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #191970;
+    margin-top: 25px;
+    margin-bottom: 6px;
+}
+
+.subtitulo_tres {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #191970;
+    margin-top: 25px;
+}
+/*------------------------------------------------------------------------------*/
+/*---------------------link-de-contato------------------------------------------*/
+.link_email {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #46a9eb;
+}
+
+.parag_atendimento {
+    color: #504f4f;
+}
+
+.parag_endereco {
+    margin-top: 7px;
+    margin-bottom: 5px;
+    color: #504f4f;
+}
+
+.link_servicos {
+    font-size: large;
+    text-decoration: none;
+    color: #504f4f;
+}
+
+.list_servicos {
+    list-style-type: none;
+    margin-top: 8px;
+}
+
+.list_sobresite {
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+.link_sobresite {
+    display: block;
+    font-size: large;
+    text-decoration: none;
+    color: #504f4f;
+}
+
+.linha{
+    position: absolute;
+    transform: translateX(26%);
+    margin-top: 15px;
+    width: 65%;
+    height: 0.6px;
+    background-color: rgba(1, 72, 119, 0.116);
+    border: none;
+}
+
+.direitos {
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    font-size: larger;
+    color: #696969;
+}
+
+.ul {
+    padding-left: 0;
+}
