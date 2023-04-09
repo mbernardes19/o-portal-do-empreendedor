@@ -9,7 +9,7 @@ export default async function checkout(req, res) {
       customer,
       products,
       payment
-    } = req.body
+    } = JSON.parse(req.body)
 
     const userIp = requestIp.getClientIp(req)
 
