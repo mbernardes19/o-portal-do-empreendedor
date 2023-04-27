@@ -1,4 +1,5 @@
 import Navbar from "./Navbar";
+import Info from "./Info";
 import Section from "./Section";
 import Faq from "./Faq";
 import Footer from "./Footer";
@@ -9,6 +10,7 @@ export default function MainContainer({ children }) {
     <>
       <div className={styles.container}>{children}</div>
       <Navbar />
+      <Info />
       <Section />
       <Faq />
       <Footer />
