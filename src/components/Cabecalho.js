@@ -3,20 +3,12 @@ import InputMask from "react-input-mask";
 import styles from "../styles/cabecalho.module.css";
 
 export default function Formu() {
-   /* const [valor, setValor] = useState("");
-
-    function handleInputChange(event) {
-      const { value } = event.target;
-      if (value.length <= 11) {
-        setValor(value);
-      }
-    }*/
   return (
     <>
       <section className={styles.container}>
-        <div>
+     
           <h1>Abrir CNPJ MEI</h1>
-        </div>
+      
         <div>
           <form>
             <input type="text" placeholder="Nome"></input>
@@ -32,10 +24,3 @@ export default function Formu() {
     </>
   );
 }
-/*
-<input
-              type="number"
-              placeholder="Telefone"
-              value={valor}
-              onChange={handleInputChange}
-            ></input>*/

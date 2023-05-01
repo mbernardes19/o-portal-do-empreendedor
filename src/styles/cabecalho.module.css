@@ -7,9 +7,9 @@
   margin-right: 30vh;
 }
 
-.container div h1 {
+.container  h1 {
   display: flex;
-
+margin-bottom: 0;
   align-items: center;
   justify-content: center;
   background-color: aquamarine;
