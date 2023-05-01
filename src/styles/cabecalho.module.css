@@ -1,0 +1,83 @@
+.container {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  margin-bottom: 30vh;
+  margin-top: 15vh;
+  margin-right: 30vh;
+ 
+}
+
+.container div h1 {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  background-color: aquamarine;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  color: #fff;
+  width: 56vh;
+  height: 9vh;
+  font-size: 4vh;
+}
+
+.container div form {
+  display: flex;
+  height: 50vh;
+  width: 56vh;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 18px;
+  border: none;
+}
+
+.container input {
+  border: 1px solid gray;
+  border-radius: 10px;
+  font-size: 15px;
+  padding-left: 10px;
+  height: 63px;
+  width: 45vh;
+}
+
+.container form button {
+  background-color: rgb(33, 221, 33);
+  width: 25vh;
+  height: 10vh;
+  border: none;
+  font-size: 25px;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.container input::-webkit-outer-spin-button,
+.container input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.container input[type="number"] {
+    -moz-appearance: textfield;
+} 
+
+@media screen  and (max-width: 768px){
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1px;
+  }
+
+  .container div form {
+    width: 50vh;
+  }
+
+  .container div h1 {
+    width: 50vh;
+  }
+}

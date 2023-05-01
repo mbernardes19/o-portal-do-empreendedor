@@ -1,4 +1,5 @@
 import Navbar from "./Navbar";
+import Formu from "./cabecalho";
 import Info from "./Info";
 import Section from "./Section";
 import Faq from "./Faq";
@@ -10,6 +11,7 @@ export default function MainContainer({ children }) {
     <>
       <div className={styles.container}>{children}</div>
       <Navbar />
+      <Formu />
       <Info />
       <Section />
       <Faq />
