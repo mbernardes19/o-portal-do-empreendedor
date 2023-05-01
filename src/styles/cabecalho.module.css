@@ -1,16 +1,15 @@
 .container {
   display: flex;
-  align-items: flex-end;
   flex-direction: column;
-  margin-bottom: 30vh;
+  align-items: flex-end;
+  margin-bottom: 20vh;
   margin-top: 15vh;
   margin-right: 30vh;
- 
 }
 
 .container div h1 {
   display: flex;
-  gap: 10px;
+
   align-items: center;
   justify-content: center;
   background-color: aquamarine;
@@ -19,7 +18,7 @@
   color: #fff;
   width: 56vh;
   height: 9vh;
-  font-size: 4vh;
+  font-size: 5vh;
 }
 
 .container div form {
@@ -28,7 +27,7 @@
   width: 56vh;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  background-color: #fff;
+  background-color: #ccc;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -55,17 +54,7 @@
   border-radius: 10px;
 }
 
-.container input::-webkit-outer-spin-button,
-.container input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
-
-.container input[type="number"] {
-    -moz-appearance: textfield;
-} 
-
-@media screen  and (max-width: 768px){
+@media screen and (max-width: 768px) {
   .container {
     display: flex;
     align-items: center;
