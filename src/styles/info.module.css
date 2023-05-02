@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 90px;
+}
+
+.container div h3 {
+    color: #4184f8;
+    font-weight: 500;
+    line-height: 30px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.container div p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+@media screen and (max-width: 768px) {
+    .container  {
+        text-align: center;
+        gap: 20px;
+    }
+}

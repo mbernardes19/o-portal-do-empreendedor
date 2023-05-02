@@ -1,0 +1,151 @@
+.section_container {
+  display: flex;
+  justify-content: center;
+  background: rgb(243, 241, 241);
+}
+
+.container {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 40px;
+  max-width: 600px;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.container h1 {
+  color: #4184f8;
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+.container h4 {
+  color: #4184f8;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.container .tab {
+  position: relative;
+  background: #fff;
+  width: 100vh;
+  padding: 0 20px 20px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.container .tab .content a {
+  display: flex;
+  margin-top: 10px;
+  color: #007bff;
+  font-size: 22px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.container .tab input {
+  appearance: none;
+}
+
+.container .tab label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.container .tab label::after {
+  content: "+";
+  position: absolute;
+  right: 20px;
+  font-size: 2em;
+  color: rgba(0, 0, 0, 0.1);
+  transition: transform 1s;
+}
+
+.container .tab:hover label::after {
+  color: #333;
+}
+
+.container .tab input:checked ~ label::after {
+  transform: rotate(135deg);
+}
+
+.container .tab label h2 {
+  width: 40px;
+  height: 40px;
+  background-color: #4184f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 1.25em;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.container .tab label h3 {
+  font-size: 24px;
+  position: relative;
+  font-weight: 500;
+  color: #4184f8;
+  z-index: 10;
+  flex-wrap: wrap;
+  
+}
+
+.container .tab .content {
+  max-height: 0;
+  transition: 1s;
+  overflow: hidden;
+}
+
+.container .tab input:checked ~ .content {
+  max-height: 100vh;
+}
+
+.container .tab .content p {
+  position: relative;
+  text-align: justify;
+  padding: 10px 0;
+  color: #333;
+  z-index: 10;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.container .tab ol {
+  margin-top: 20px;
+  margin-left: 22px;
+  text-align: start;
+  font-size: 18px;
+  color: #333;
+  line-height: 26px;
+}
+
+.container .tab input:checked::after {
+  max-width: 0vh;
+}
+
+@media screen and (max-width: 768px) {
+  .container .tab {
+    width: 40vh;
+  }
+
+  .container .tab label::after {
+    content: "+";
+    position: absolute;
+    right: 10px;
+  }
+
+  .container .tab label h2 {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    color: #4184f8;
+  }
+  .container .tab label h3 {
+    font-size: 15px;
+  }
+}
