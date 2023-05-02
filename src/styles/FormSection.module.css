@@ -1,0 +1,10 @@
+.header {
+    margin: 24px 0;
+}
+
+.error {
+    margin-left: 15px !important;
+    margin-top: -25px;
+    color: red;
+    font-size: 12px;
+}

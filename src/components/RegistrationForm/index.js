@@ -1,15 +1,27 @@
 import { useForm } from 'react-hook-form'
-import styles from '../../styles/RegistrationForm.module.css'
-import FormInput from '../FormInput'
 import DadosPessoaisSection from './DadosPessoais'
+import InformacoesMEI from './InformacoesMEI'
+import FormaAtuacao from './FormaAtuacao'
+import EnderecoComercialSection from './EnderecoComercial'
 
-const onSubmit = (data) => console.log(data)
+export default function RegistrationForm() {
+    const { handleSubmit, ...formHandlers } = useForm()
+    const onSubmit = (data) => {
+        console.log(data)
+        console.log(errors)
+    }
 
-export default function RegistrationForm(props) {
-    const {register, handleSubmit, watch, formState} = useForm()
+    const onInvalid = (data) => {
+        console.log('ERRRORRRR', formHandlers.formState.errors)
+    }
+
+
     return (
-        <form onSubmit={handleSubmit(onSubmit)}>
-            <DadosPessoaisSection register={register} />
+        <form onSubmit={handleSubmit(onSubmit, onInvalid)}>
+            <DadosPessoaisSection formHandlers={formHandlers} />
+            <InformacoesMEI formHandlers={formHandlers} />
+            <FormaAtuacao formHandlers={formHandlers} />
+            <EnderecoComercialSection formHandlers={formHandlers} />
             <input type="submit" />
         </form>
     )
