@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    flex-flow: column;
+}
+
+.inlineContainer {
+    flex-flow: row;
+}
+
+.checkbox {
+    order: -1;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+}
+
+.erroredField input, .erroredField select  {
+    border: 1.5px solid red;
+    border-radius: 3px;
+}
