@@ -8,7 +8,7 @@ export default function Faq() {
         <h4>MEI - MICROEMPREENDEDOR INDIVIDUAL</h4>
         <div className={styles.tab}>
           <input type="checkbox" name="acc" id="acc1"></input>
-          <label for="acc1">
+          <label htmlFor="acc1">
             <h2>01</h2>
             <h3> O que significa MEI e o que é ?</h3>
           </label>
@@ -32,7 +32,7 @@ export default function Faq() {
         </div>
         <div className={styles.tab}>
           <input type="checkbox" name="acc" id="acc2"></input>
-          <label for="acc2">
+          <label htmlFor="acc2">
             <h2>02</h2>
             <h3>Até quanto com um CNPJ MEI posso faturar?</h3>
           </label>
@@ -48,7 +48,7 @@ export default function Faq() {
         <h4>PARA MEI - BENEFÍCIOS PREVIDENCIÁRIOS (INSS)</h4>
         <div className={styles.tab}>
           <input type="checkbox" name="acc" id="acc3"></input>
-          <label for="acc3">
+          <label htmlFor="acc3">
             <h2>03</h2>
             <h3>Eu sendo MEI posso me aposentar pelo INSS?</h3>
           </label>
@@ -66,7 +66,7 @@ export default function Faq() {
 
         <div className={styles.tab}>
           <input type="checkbox" name="acc" id="acc4"></input>
-          <label for="acc4">
+          <label htmlFor="acc4">
             <h2>04</h2>
             <h3>Quem tem um CNPJ MEI pode possui outros benefícios do INSS?</h3>
           </label>
@@ -93,9 +93,9 @@ export default function Faq() {
         <h4>VANTAGENS EM SER MEI E MAIS BENEFÍCIOS</h4>
         <div className={styles.tab}>
           <input type="checkbox" name="acc" id="acc5"></input>
-          <label for="acc5">
+          <label htmlFor="acc5">
             <h2>05</h2>
-            <h3>Eu tenho "carteira assinada". Posso ser MEI?</h3>
+            <h3>Eu tenho carteira assinada. Posso ser MEI?</h3>
           </label>
           <div className={styles.content}>
             <p>
@@ -106,7 +106,7 @@ export default function Faq() {
 
         <div className={styles.tab}>
           <input type="checkbox" name="acc" id="acc6"></input>
-          <label for="acc6">
+          <label htmlFor="acc6">
             <h2>06</h2>
             <h3>Quem é MEI recebe Seguro-Desemprego?</h3>
           </label>
@@ -119,7 +119,7 @@ export default function Faq() {
         </div>
         <div className={styles.tab}>
           <input type="checkbox" name="acc" id="acc7"></input>
-          <label for="acc7">
+          <label htmlFor="acc7">
             <h2>07</h2>
             <h3>Se eu tiver CNPJ MEI posso abrir uma conta jurídica?</h3>
           </label>
@@ -133,7 +133,7 @@ export default function Faq() {
         <h4>PARA MEI - FUNCIONÁRIO</h4>
         <div className={styles.tab}>
           <input type="checkbox" name="acc" id="acc8"></input>
-          <label for="acc8">
+          <label htmlFor="acc8">
             <h2>08</h2>
             <h3>Sendo MEI, posso ter funcionários?</h3>
           </label>
@@ -149,7 +149,7 @@ export default function Faq() {
         <h4>PARA MEI - NOTA FISCAL (NFe)</h4>
         <div className={styles.tab}>
           <input type="checkbox" name="acc" id="acc9"></input>
-          <label for="acc9">
+          <label htmlFor="acc9">
             <h2>09</h2>
             <h3>Quem possui MEI pode emitir nota fiscal?</h3>
           </label>
@@ -162,7 +162,7 @@ export default function Faq() {
         </div>
         <div className={styles.tab}>
           <input type="checkbox" name="acc" id="acc10"></input>
-          <label for="acc10">
+          <label htmlFor="acc10">
             <h2>10</h2>
             <h3>Para o MEI é obrigado fazer nota fiscal (NFe)?</h3>
           </label>
@@ -178,7 +178,7 @@ export default function Faq() {
         <h4>PARA ABRIR SEU CNPJ MEI VEJA O QUE VOCÊ PRECISA SABER</h4>
         <div className={styles.tab}>
           <input type="checkbox" name="acc" id="acc11"></input>
-          <label for="acc11">
+          <label htmlFor="acc11">
             <h2>11</h2>
             <h3>
               O que preciso para me tornar um Microempreendedor Individual -
@@ -196,7 +196,7 @@ export default function Faq() {
         </div>
         <div className={styles.tab}>
           <input type="checkbox" name="acc" id="acc12"></input>
-          <label for="acc12">
+          <label htmlFor="acc12">
             <h2>12</h2>
             <h3>Quando finalizar o cadastro, o que irei receber?</h3>
           </label>
@@ -216,7 +216,7 @@ export default function Faq() {
         </div>
         <div className={styles.tab}>
           <input type="checkbox" name="acc" id="acc13"></input>
-          <label for="acc13">
+          <label htmlFor="acc13">
             <h2>13</h2>
             <h3>Qualquer pessoa pode ser MEI?</h3>
           </label>
@@ -237,7 +237,7 @@ export default function Faq() {
         </div>
         <div className={styles.tab}>
           <input type="checkbox" name="acc" id="acc14"></input>
-          <label for="acc14">
+          <label htmlFor="acc14">
             <h2>14</h2>
             <h3>
               Fazendo o cadastro do CNPJ MEI posso perder benefícios que já
@@ -271,7 +271,7 @@ export default function Faq() {
         </div>
         <div className={styles.tab}>
           <input type="checkbox" name="acc" id="acc15"></input>
-          <label for="acc15">
+          <label htmlFor="acc15">
             <h2>15</h2>
             <h3>Posso me registrar como MEI e manter a carteira assinada?</h3>
           </label>
@@ -284,7 +284,7 @@ export default function Faq() {
         </div>
         <div className={styles.tab}>
           <input type="checkbox" name="acc" id="acc16"></input>
-          <label for="acc16">
+          <label htmlFor="acc16">
             <h2>16</h2>
             <h3>
               Quais atividades são permitidas para Microempreendedor Individual?
@@ -300,23 +300,23 @@ export default function Faq() {
         </div>
         <div className={styles.tab}>
           <input type="checkbox" name="acc" id="acc17"></input>
-          <label for="acc17">
+          <label htmlFor="acc17">
             <h2>17</h2>
             <h3>
-              Se eu tiver o "nome sujo" no SPC/SERASA, é possível realizar o
+              Se eu tiver o nome sujo no SPC/SERASA, é possível realizar o
               registro do CNPJ MEI?
             </h3>
           </label>
           <div className={styles.content}>
             <p>
               Sim, com certeza, não existem impedimentos para que pessoas com
-              "nome sujo" façam o registro do CNPJ MEI.
+              nome sujo façam o registro do CNPJ MEI.
             </p>
           </div>
         </div>
         <div className={styles.tab}>
           <input type="checkbox" name="acc" id="acc18"></input>
-          <label for="acc18">
+          <label htmlFor="acc18">
             <h2>18</h2>
             <h3>Quanto vou pagar para ter um CNPJ MEI?</h3>
           </label>

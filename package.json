@@ -16,12 +16,15 @@
     "email-validator": "^2.0.4",
     "eslint": "8.37.0",
     "eslint-config-next": "13.2.4",
+    "firebase": "^9.21.0",
     "next": "13.2.4",
     "node-fetch": "^3.3.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-hook-form": "^7.43.9",
+    "react-input-mask": "^2.0.4",
+    "react-tabs": "^6.0.1",
     "request-ip": "^3.3.0",
-    "react-input-mask": "^2.0.4"
+    "uuid": "^9.0.0"
   }
 }

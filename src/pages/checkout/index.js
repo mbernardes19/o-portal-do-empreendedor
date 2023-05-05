@@ -1,5 +1,6 @@
-import Payment from '../../components/Payment'
-import PixPayment from '../../components/PixPayment'
+import { PaymentSelector } from '@/components/PaymentSelector'
+import Payment from '../../components/PixPayment'
+import PixPayment from '../../components/PixPaymentDisplay'
 
 export default function Checkout({transaction}) {
     if (transaction) {
@@ -11,7 +12,7 @@ export default function Checkout({transaction}) {
             pixKey={transaction.PaymentObject.Key}
         />
     }
-    return <Payment />
+    return <PaymentSelector />
 }
 
 export async function getServerSideProps(context) {

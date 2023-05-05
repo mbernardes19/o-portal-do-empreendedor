@@ -17,7 +17,7 @@ export default function Formu() {
 
             
             <InputMask mask="(99) 9999-99999" placeholder="Telefone" id="meuInput" type="tel" />
-            <button type="submit">Abrir MEI</button>
+            <button type="submit" formAction="/formulario">Abrir MEI</button>
           </form>
         </div>
       </section>

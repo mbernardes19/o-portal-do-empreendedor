@@ -14,7 +14,7 @@ export default function FormInput(props) {
                 [styles.erroredField]: errors && errors.message
             }
         )}>
-            <label for={label}>{label}</label>
+            <label htmlFor={label}>{label}</label>
             {selectOptions ?
                 <select {...inputRef} {...rest} >
                     {selectOptions.map((optionValue, idx) => (

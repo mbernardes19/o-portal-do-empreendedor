@@ -1,4 +1,4 @@
-import PixPayment from '../../components/PixPayment'
+import PixPayment from '../../components/PixPaymentDisplay'
 
 export default function Pix(transactionData) {
     return (

@@ -17,7 +17,7 @@ export default async function checkout(req, res) {
       IsSandbox: process.env.PAY_SANDBOX,
       Application: process.env.PAY_APPLICATION_NAME,
       Vendor: process.env.PAY_VENDOR,
-      UserIp: userIp
+      IpAddress: userIp
     }
 
     switch (paymentMethod) {
@@ -32,6 +32,7 @@ export default async function checkout(req, res) {
       case '2':
         return await makeCreditCardPayment({
           ...basePayload,
+          IsSandbox: true,
           PaymentMethod: paymentMethod,
           Customer: customer,
           Products: products,
@@ -63,6 +64,7 @@ const makePixPayment = async (payload, {req, res}) => {
 }
 
 const makeCreditCardPayment = async (payload, {req, res}) => {
+  console.log('makeCreditCardPayment payload', payload)
   const response = await fetch(
     'https://payment.safe2pay.com.br/v2/Payment',
     {

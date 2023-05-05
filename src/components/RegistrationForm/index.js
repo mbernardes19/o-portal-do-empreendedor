@@ -3,12 +3,27 @@ import DadosPessoaisSection from './DadosPessoais'
 import InformacoesMEI from './InformacoesMEI'
 import FormaAtuacao from './FormaAtuacao'
 import EnderecoComercialSection from './EnderecoComercial'
+import styles from '../../styles/Form.module.css'
+import { db } from '../../utils/firebase'
+import { setDoc, doc } from 'firebase/firestore/lite'
+import { getSessionId } from '../../utils/session'
 
 export default function RegistrationForm() {
     const { handleSubmit, ...formHandlers } = useForm()
-    const onSubmit = (data) => {
+    const onSubmit = async (data) => {
         console.log(data)
-        console.log(errors)
+        setDoc(doc(db, 'pedidos-mei', getSessionId()), {
+            pedido: JSON.stringify(data),
+            pagamento: JSON.stringify({
+                status: 'PENDENTE'
+            })
+        })
+        sessionStorage.setItem(getSessionId(), JSON.stringify({
+            pedido: JSON.stringify(data),
+            pagamento: JSON.stringify({
+                status: 'PENDENTE'
+            })
+        }))
     }
 
     const onInvalid = (data) => {
@@ -17,7 +32,7 @@ export default function RegistrationForm() {
 
 
     return (
-        <form onSubmit={handleSubmit(onSubmit, onInvalid)}>
+        <form className={styles.form} onSubmit={handleSubmit(onSubmit, onInvalid)}>
             <DadosPessoaisSection formHandlers={formHandlers} />
             <InformacoesMEI formHandlers={formHandlers} />
             <FormaAtuacao formHandlers={formHandlers} />
