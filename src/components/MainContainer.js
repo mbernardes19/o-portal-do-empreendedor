@@ -1,4 +1,4 @@
-import Formu from "./cabecalho";
+import Formu from "./Cabecalho";
 import Info from "./Info";
 import Section from "./Section";
 import Faq from "./Faq";
